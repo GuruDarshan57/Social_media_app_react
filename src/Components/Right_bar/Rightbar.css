@@ -1,0 +1,92 @@
+.rightbar{
+    flex: 4;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 74px);
+    overflow: scroll;
+    background-color: var(--bg_secondary);
+}
+.rightbar::-webkit-scrollbar{
+    display: none;
+}
+.rightbar_con{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightbar_suggestions,.rightbar_activities,.rightbar_friends{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--bg_primary);
+    color: var(--color);
+    border-radius: 20px;
+    box-shadow: 10px 10px 16px 0px rgba(186, 182, 186, 0.041);
+}
+.rightbar_user,.rightbar_activitiy{
+    display: flex;
+    justify-content: space-between;
+}
+.rightbar_activitiy{
+    gap: 30px;
+}
+.rightbar_left,.rightbar_right,.rightbar_al,.friend{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rightbar_al{
+    flex: 0.8;
+    text-align: justify;
+    justify-content: space-between;
+}
+.rightbar_al span{
+   flex: 2;
+}
+
+.rightbar_ar{
+    flex: 0.2;
+    justify-items: center;
+}
+.rightbar_left img,.rightbar_al img,.friend img{
+    height: 35px;
+    width:35px;
+    border-radius: 100%;
+}
+.rightbar_follow,.rightbar_dismiss{
+    padding: 4px 5px;
+    background-color: #5271ff;
+    color: white;
+    border: solid 2px rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    width: 60px;
+}
+.rightbar_dismiss{
+    background-color: red;
+}
+.rightbar_activities{
+    gap: 20px;
+}
+.rightbar_ar span{
+    font-size: 13px;
+}
+.friend{
+    position: relative;
+}
+.online{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(43, 205, 43);
+    position: absolute;
+    top:0;
+    left:29px;
+}
+
+@media(max-width:450px){
+    .rightbar{
+        display: none;
+    }
+}

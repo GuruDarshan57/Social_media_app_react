@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.app_container{
+  display: flex;
+}
+:root{
+  --bg_primary:white;
+  --bg_secondary:#f6f3f3;
+  --color:black; 
+  --logo:purple;
+}
+.dark_mode{
+  --bg_primary:#222;
+  --bg_secondary:#333;
+  --color_primary:white;
+  --color:white; 
+  --logo:white;
+}
+.img{
+    height: 40px;
+    width:40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
